@@ -107,3 +107,25 @@ button:hover span {
 button:hover {
   border: 2px solid transparent;
 }
+
+.footer-container {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 30px;
+  display: flex;
+}
+
+.footer-container ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  display: flex;
+}
