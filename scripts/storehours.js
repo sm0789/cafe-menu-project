@@ -23,9 +23,9 @@ const storeStatus = document.getElementById("store-status");
 
 // Check if the Store is Open or Closed
 if (currentHour >= openHour && currentHour < closeHour) {
-  storeStatus.textContent = "We're currently OPEN!";
-  storeStatus.style.color = "green";
+  storeStatus.textContent = "STORE IS OPEN!";
+  storeStatus.style.backgroundColor = "green";
 } else {
-  storeStatus.textContent = "We're currently CLOSED.";
-  storeStatus.style.color = "red";
+  storeStatus.textContent = "STORE IS CLOSED.";
+  storeStatus.style.backgroundColor = "red";
 }

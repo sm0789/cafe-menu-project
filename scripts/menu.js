@@ -1,4 +1,5 @@
 // Sample menu data
+//holds an array of objects, each with name and description
 const menuItems = [
   {
     name: "Espresso",
@@ -146,33 +147,35 @@ const menuItems = [
 
 // Search function
 function searchMenu() {
-  const query = document.getElementById("menu-search").value.toLowerCase();
+  const query = document.getElementById("menu-search").value.toLowerCase(); //gets the searched word using the id on the input field
   const results = menuItems.filter(
     (item) =>
       item.name.toLowerCase().includes(query) ||
       item.description.toLowerCase().includes(query)
+    //checks if either description or title contains the word searched
   );
 
-  displayResults(results);
+  displayResults(results); //called to show items on page
 }
 
 // Function to display results
 function displayResults(results) {
-  const resultsContainer = document.getElementById("menu-results");
+  const resultsContainer = document.getElementById("menu-results"); //gets element from html where results will be displayed
   resultsContainer.innerHTML = ""; // Clear previous results
 
   if (results.length === 0) {
-    resultsContainer.innerHTML = "<p>No items match your search.</p>";
+    resultsContainer.innerHTML = "<p>No items match your search.</p>"; //if empty print that there are no matches
     return;
   }
 
+  //loops through items and creates new div for each with name and description
   results.forEach((item) => {
     const itemBox = document.createElement("div");
-    itemBox.classList.add("menu-item");
+    itemBox.classList.add("menu-item"); //apply styles
     itemBox.innerHTML = `
         <h3>${item.name}</h3>
         <p>${item.description}</p>
       `;
-    resultsContainer.appendChild(itemBox);
+    resultsContainer.appendChild(itemBox); //adds item
   });
 }
