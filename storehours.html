@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
+    <title>Grounds & Co. Cafe</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="banner">
       <div class="navbar">
-        <!--Logo and Navbar at the top of the page-->
+        <!--Logo and Navbar at top of page-->
         <img src="images/coffeelogo.png" class="logo" />
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,20 +19,17 @@
         </ul>
       </div>
       <div class="content">
-        <!--Menu Search-->
-        <h1>Search Our Menu</h1>
-        <p>Find your favorite coffee or snack below!</p>
-        <div class="search-container">
-          <input
-            type="text"
-            id="menu-search"
-            placeholder="Search for menu items..."
-          />
-          <button type="button" onclick="searchMenu()">Search</button>
-        </div>
-        <div id="menu-results" class="menu-results"></div>
+        <!--Content for store hours-->
+        <h1>Store Hours</h1>
+        <p id="store-status"></p>
+        <p>Our regular hours are:</p>
+        <ul>
+          <li>Monday-Friday: 7:00 AM - 7:00 PM</li>
+          <li>Saturday: 8:00 AM - 8:00 PM</li>
+          <li>Sunday: 9:00 AM - 5:00 PM</li>
+        </ul>
       </div>
     </div>
-    <script src="menu.js"></script>
+    <script src="storehours.js"></script>
   </body>
 </html>
