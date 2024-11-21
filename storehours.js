@@ -12,9 +12,9 @@ const storeHours = {
 // Get Current Time from the user device
 const currentTime = new Date();
 const currentDay = currentTime.getDay(); //0 at start for Sunday and 6 for Saturday 1-6 values
-console.log(currentTime);
-console.log(currentTime.getDay());
-console.log(currentTime.getHours());
+//console.log(currentTime);
+//console.log(currentTime.getDay());
+//console.log(currentTime.getHours());
 const currentHour = currentTime.getHours(); //outputs 0-23 depending on the hour on the user's device
 
 // Get Store Hours for Today
