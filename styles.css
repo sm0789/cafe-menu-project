@@ -142,7 +142,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-height: 220px; /* Set a fixed height */
+  max-height: 210px; /* Set a fixed height */
   overflow-y: auto; /* Add a vertical scrollbar if content overflows */
   padding: 10px; /* Optional: Adds some padding around items */
 }
@@ -176,11 +176,11 @@ button:hover {
 .location-card {
   background-color: white;
   color: black;
-  width: 17%;
+  width: 15%;
   align-items: center;
   text-align: center;
-  padding: 15px 10px;
-  margin: 10px 10px;
+  padding: 10px;
+  margin: 10px 5px;
   display: inline-block;
   border-radius: 30px;
   transition: 0.5s;
@@ -191,16 +191,17 @@ button:hover {
   padding: 10px;
   border-radius: 20px;
   border: 2px solid #c37857;
-  font-size: 16px;
+  font-size: 15px;
+  font-family: "andale mono", monospace;
 }
 
 .location-card h2 {
   font-size: 20px;
-  padding: 1px;
+  margin: 10px;
 }
 
 .location-card p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .location-card:hover {
