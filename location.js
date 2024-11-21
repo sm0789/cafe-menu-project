@@ -5,7 +5,7 @@ locationSearch.addEventListener("keyup", (e) => {
   locations.forEach((location) => {
     if (location.textContent.toLowerCase().includes(currentValue)) {
       //show location card
-      location.parentNode.parentNode.style.display = "block";
+      location.parentNode.parentNode.style.display = "inline-block";
     } else {
       //otherwise hide location card
       location.parentNode.parentNode.style.display = "none";
