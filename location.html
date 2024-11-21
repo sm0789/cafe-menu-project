@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <!--Logo and Navbar at the top of the page-->
+        <img src="images/coffeelogo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="location.html">Locations</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <!--Menu Search-->
+        <h1>Find a Location Near You!</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="location-search"
+            placeholder="Search for locations...."
+          />
+        </div>
+        <div id="locationContainer" class="location-container">
+          <div class="location-card">
+            <div class="card-title">
+              <h2 class="title">Indianapolis</h2>
+              <p>Located in the city! Great atmosphere!</p>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <div class="card-title">
+              <h2 class="title">West Lafayette</h2>
+              <p>Located near Purdue! Great place to study!</p>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <div class="card-title">
+              <h2 class="title">Bloomington</h2>
+              <p>Located near IU! Great atmosphere!</p>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <div class="card-title">
+              <h2 class="title">Carmel</h2>
+              <p>No clue what this place is</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="location.js"></script>
+  </body>
+</html>

@@ -151,6 +151,7 @@ button:hover {
   width: 200px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 
 .menu-item h3 {
@@ -161,5 +162,29 @@ button:hover {
 
 .menu-item p {
   font-size: 14px;
-  color: #666;
+  color: #665;
+}
+
+.menu-item:hover {
+  background: #c37857;
+  color: white;
+}
+
+.location-card {
+  background-color: white;
+  color: black;
+  width: 25%;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 10px;
+  display: inline-block;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.location-card:hover {
+  cursor: pointer;
+  background-color: #c37857;
+  color: white;
 }
